@@ -1,0 +1,44 @@
+{
+  "name": "next-pwa",
+  "version": "6.1",
+  "description": "Next.js with PWA, powered by workbox.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "set PORT=80 && next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vistabus/next"
+  },
+  "author": "Zachary",
+  "keywords": [
+    "nextjs",
+    "pwa",
+    "workbox",
+    "web",
+    "service-worker"
+  ],
+  "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.6",
+    "@radix-ui/react-switch": "^1.0.3",
+    "dexie": "^4.0.4",
+    "dexie-react-hooks": "^1.1.7",
+    "material-symbols": "^0.17.2",
+    "next": "^14.2.0",
+    "next-pwa": "latest",
+    "papaparse": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.77",
+    "eslint": "^8.22.0",
+    "eslint-config-next": "12.2.5",
+    "webpack": "^5.91.0"
+  }
+}

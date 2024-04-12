@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ html,body{
+  margin: 0;
+  height: 100dvh;
+ }
+ *, *:before, *:after {
+  box-sizing: border-box;
+}
+@layer base {
+  :root {
+    --primary: 222.2 47.4% 11.2%;
+  }
+  .dark {
+    --primary: 210 40% 98%;
+  }
+}
+@layer base {
+  * {@apply border-border;}
+  body {@apply bg-background text-foreground;}
+}
+.card{
+  background-color: lightgray;
+  width: 80dvw;
+  margin: 3% auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1dvw;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+@import 'material-symbols';
+
+select{
+  border: none;
+}
+
+.add{
+border: 2px dotted grey;
+background-color: aliceblue;
+justify-content: center;
+}
+.add:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background: black;
+    color: white;
+    color-scheme: dark;
+  }
+  .card{
+    background-color: #2b2b2b;
+  }
+}
+nav{
+  background-color: grey;
+  color: white;
+  top: 0;
+  height: 10dvh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+swiper-slide{
+  background-color: red;
+  border: 1px solid white;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  height: 80dvh;
+  display: flex;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: 2b2b2b;
+  justify-content: center;
+  align-items: center;
+
+}
+.swiper-pagination{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: none;
+  height: 10dvh;
+  bottom: 0;
+  align-items: center;
+  position: fixed!important;
+}
+.swiper-pagination button{
+  flex: 2;
+  height: 100%;
+  border-radius: 0;
+}
+
+.full {
+  max-height: 100%; /* Set the maximum height of the container */
+  overflow: auto; /* Enable scrolling */
+}
+
+
+.greyed-out {
+color: #414141; /* Grey background color */
+}
+
+
+
+button {
+  all: unset;
+}
+
+.SR {
+  width: 42px;
+  height: 25px;
+  border-radius: 9999px;
+  position: relative;
+  box-shadow: 0 2px 10px var(--black-a7);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+
+}
+.SR[data-state='checked'] {
+  background-color: darkgreen;
+}
+.ST {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+
+  border-radius: 9999px;
+  box-shadow: 0 2px 2px var(--black-a7);
+  transition: transform 100ms;
+  transform: translateX(2px);
+  will-change: transform;
+}
+.ST[data-state='checked'] {
+  transform: translateX(19px);
+}
+
+.Setting Label {
+  color: white;
+  padding-right: 15px;
+}
+.Setting {
+  display: flex;
+  align-content: space-around;
+}
+.Setting>button:not(.SR){
+  background-color: darkgreen;
+  border-radius: 999px;
+  padding: 10px;
+  width: 25dvw;
+}
+.Setting>button:not(.SR):hover{
+  outline: 1px solid darkgreen;
+}
+.Home{
+  display: flex!important;
+  flex-direction: column;
+
+}
+.Home div{
+  flex-grow: 2;
+  width: 90dvw;
+  margin: 10px;
+  border-radius: 30px;
+}
+.Home div:nth-child(1){background-color: #333300;}
+.Home div:nth-child(2){background-color: #003300;}
+.Home div:nth-child(3){background-color:  #330033;}
+.Home div p:nth-child(2){color:#414141 ;}

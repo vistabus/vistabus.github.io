@@ -1,0 +1,56 @@
+
+{
+  "name": "Vista Bus Next",
+  "short_name": "Vista Bus Next",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": ".",
+  "_comment": "Repo Name here!?",
+  "start_url": "./",
+  "icons": [
+  {
+    "src": "/144.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "purpose": "any"
+  },
+  {
+  "src": "/192.png",
+  "sizes": "192x192",
+  "type": "image/png",
+  "purpose": "maskable any"
+  },
+  {
+  "src": "/apple-touch-icon.png",
+  "sizes": "180x180",
+  "type": "image/png"
+  },
+  {
+  "src": "/favicon-16x16.png",
+  "sizes": "16x16",
+  "type": "image/png"
+  },
+  {
+    "src": "/512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "maskable any"
+}
+  ],
+  "splash_pages": null,
+  "description": "A chat application for seamless communication.",
+  "app_id": "com.example.chat",
+  "launch_handler": {"enabled": true},
+  "screenshots": [
+  {"src": "ss.png","sizes": "any","type": "image/png"}
+  ],
+  "categories": ["Communication","Social"],
+  "dir": "ltr",
+  "iarc_rating_id": "E",
+  "lang": "en",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope_extensions": []
+  }
