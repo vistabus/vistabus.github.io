@@ -26,11 +26,9 @@ if (process.env.GITHUB_ACTIONS || false) {
 const settings = {
   env: {},
   devIndicators: {autoPrerender: false,},
-  pwa: {dest: 'public',},
 };
 module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA({
   output: "export", // must for GitHub page
-  pagesDir: 'app',
   assetPrefix: assetPrefix,
   basePath: basePath,
   images: { unoptimized: true },
