@@ -7,16 +7,9 @@ module.exports = withPWA({
   // next.js config
 }) */
 const withPWA = require('@ducanh2912/next-pwa').default({
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
-  reloadOnOnline: true,
-  swcMinify: true,
   dest: 'public',
-  //fallbacks: {
-  //  document:"/~offline"}
 })
 
-/** @type {import('next').NextConfig} */
 let assetPrefix='',basePath = ''
 if (process.env.GITHUB_ACTIONS || false) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
