@@ -9,7 +9,7 @@ export default function Full() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/next/NEWschedule.csv');
+        const response = await fetch('/NEWschedule.csv');
         const text = await response.text();
         var parsedData = Papa.parse(text, { header: true }).data;
         const weekday = new Date().getDay();
